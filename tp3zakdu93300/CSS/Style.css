@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+/*-------------------------------------------DECORATION--------------------------------------*/
+h1,
+h2,
+h3 {
+    font-family: fantasy;
+}
+
+/* nav {
+    padding-left: 500px;
+} */
+
+nav a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#Boite aside ul li a {
+    color: black;
+
+}
+
+section,
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------STYLE GENERAL------------------------------*/
+@media screen and (max-width: 640px) {
+    #Boite {
+        flex-direction: column;
+        justify-content: center;
+        /*Ecran de largeur maximum de 640 px -Telephone*/
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    /*Ecran d'ordinateur minimum de 640PX */
+
+    aside {
+        padding-left: 100px;
+        top: 0;
+        bottom: 0;
+    }
+
+}
+
+.mdl-layout__drawer a {
+    padding-left: 50px;
+}
+
+aside {
+    border-left: 1px solid #000;
+
+    height: 2500px;
+
+}
+
+#asideFormulaire {
+
+    border-left: 1px solid #000;
+
+    height: 1350px;
+}
+
+#asideSurNous{
+    
+    border-left: 1px solid #000;
+
+    height: 800px;
+}
+
+/*Espace*/
+body main {
+    padding-left: 30px;
+    border-right: 5px thick black;
+}
+
+/*Encadré l'image*/
+.ImageIndex img {
+    border: thick solid black;
+    padding: 10px;
+}
+
+iframe {
+    border: thick solid black;
+    padding: 10px;
+}
+
+#legendindex {
+    color: blue;
+    font-size: 10px;
+}
+
+/*Modifier la taille de la legende par rapport au texte */
+figcaption {
+    font-size: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*Aligner le contenu principal au aside*/
+#Boite {
+    display: flex;
+    justify-content: space-between;
+}
+
+#BoiteSurNous {
+    display: flex;
+    justify-content: space-between;
+}
+
+#BoiteJoindre {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*L'element section prend moin de place*/
+#Boite section {
+    flex-basis: 50px;
+}
+
+
+/*----------------------------ELEMENT TABLEAU--------------------------*/
+table {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: thick solid black; */
+    margin: auto;
+    ;
+}
+
+table th,
+table td {
+    border-bottom: 1px solid blue;
+    padding: 10px;
+    color: blue;
+
+}
+
+td:hover {
+    background-color: salmon;
+    font-weight: bold;
+}
+
+table caption {
+    font-family: fantasy;
+    padding-bottom: 50px;
+    font-size: 20px;
+    padding-top: 50px;
+    caption-side: bottom;
+
+}
+
+/*-----------------------------------------------------------------------*/
+legend {
+    font-size: 30px;
+}
+
+/*-------------------------------------------------FOOTER----------------------------------*/
+#FootIndex,
+#FootCategorie {
+    height: 40px;
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*-------------------------MODIFICATION DE LA COULEUR DES LEGENDES D'IMAGES DANS LA FENETRE CATEGORIE----------------------------*/
+#Komodos figcaption a {
+
+    color: black;
+}
+
+
+#Shonen figcaption a {
+
+    color: black;
+}
+
+#Shojo figcaption a {
+
+    color: black;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+.PDF {
+    background-image: url("../icones/icon_pdf.gif");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.EXC {
+    background-image: url("../icones/icon_excel.gif");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joindre</title>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-light_green.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="mdl-layout   mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header ">
+            <div class="mdl-layout__header-row">
+
+                <h1>Joindre</h1>
+                <div class="mdl-layout-spacer"></div>
+
+                <nav class="mdl-naviguation">
+                    &nbsp;&nbsp;<a class="mdl-navigation_ _link" href="index.html">Acceuil</a>&nbsp;&nbsp;
+                    <a class="mdl-navigation_ _link" href="Categories.html">Categorie</a>&nbsp;&nbsp;
+                    <a class="mdl-navigation_ _link" href="evenement.html">Evenement </a>&nbsp;&nbsp;
+                    <a class="mdl-navigation_ _link" href="SurNous.html">SurNous</a>&nbsp;&nbsp;
+                    <a class="mdl-navigation_ _link" href="Joindre.html">Joindre</a>&nbsp;&nbsp;
+                    <a class="mdl-navigation_ _link"
+                        href="http://www-ens.iro.umontreal.ca/~saadizak/tp3zakdu93300/index.html">Site Public</a>
+
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Joindre</span>
+            <nav class="mdl-naviguation">
+                <a class="mdl-navigation__link" href="index.html">Acceuil</a><br><br><br>
+                <a class="mdl-navigation__link" href="Categories.html">Categorie</a><br><br><br>
+                <a class="mdl-navigation__link" href="evenement.html">Evenement </a><br><br><br>
+                <a class="mdl-navigation__link" href="SurNous.html">SurNous</a><br><br><br>
+                <a class="mdl-navigation__link" href="Joindre.html">Joindre</a><br><br><br>
+                <a class="mdl-navigation__link"
+                    href="http://www-ens.iro.umontreal.ca/~saadizak/tp2zakdu93300/index.html">Site Public</a><br>
+
+            </nav>
+        </div>
+        <main class="mdl-layout__content" id="BoiteJoindre">
+            <section class="main-joindre">
+                <h2>Comment me joindre</h2>
+                <address>
+                    <p>Adresse Postal:</p>
+                    <p>2350 Boulevard Edouard-Montpetit</p>
+                    <p>Mail:</p>
+                    <a href="mailto:zakarya.saadi@umontreal.ca">Envoyez un courriel</a><br>
+                    <p>Numero de Telephone: </p>
+                    <a href="tel:+15146666666">+15146666666</a>
+                </address>
+            </section>
+            <!-- FORMULAIRE -->
+            <aside id="asideFormulaire">
+                <form method="post" action="http://www-labs.iro.umontreal.ca/~coelho/ExemplesHTML/Forms/echoForm.php"
+                    class="form">
+
+                    <fieldset id="DonneesPerso">
+                        <legend>Données personnelles</legend>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="nom">Nom :</label>
+                            <input class="mdl-textfield__input" type="text" id="nom" name="nom" required><br>
+
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="age">Âge :</label>
+                            <input class="mdl-textfield__input" type="number" id="age" name="age"><br>
+                            <span class="mdl-tooltip mdl-tooltip--large">
+                                Nous vous demandons votre âge seulement pour des fins statistiques.
+                            </span>
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="telephone">Téléphone :</label>
+                            <input class="mdl-textfield__input" type="tel" id="telephone" name="telephone"
+                                pattern=" \([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}"><br>
+
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="courriel">Courriel :</label>
+                            <input class="mdl-textfield__input" type="email" id="courriel" name="courriel" required><br>
+
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="confcourriel">Confirmer le courriel :</label>
+                            <input class="mdl-textfield__input" type="email" id="confcourriel" name="confcourriel"
+                                required><br>
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="code_postal">Code postal :</label>
+                            <input class="mdl-textfield__input" type="text" id="code_postal" name="code_postal"><br>
+
+                        </div><br>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mdl-textfield__label" for="ville">Ville :</label>
+                            <input class="mdl-textfield__input" type="text" id="ville" name="ville">
+                            <datalist id="Quebec">
+                                <option value="Montréal">Montreal</option>
+                                <option value="Québec">Québec</option>
+                                <option value="Laval">Laval</option>
+                                <option value="Gatineau">Gatineau</option>
+                                <option value="Longueuil">Longueuil</option>
+                                <option value="Trois-Rivières">Trois-Rivières</option>
+                                <option value="Terrebonne">Terrebonne</option>
+                                <option value="Saint-Jean-sur-Richelieu">Saint-Jean-sur-Richelieu</option>
+                            </datalist> <br>
+                        </div><br>
+
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <p>Province</p>
+                            <select id="province" name="province">
+                                <option value="Québec">Québec</option>
+                                <option value="Ontario">Ontario</option>
+                                <option value="Colombie-Britannique">Colombie-Britannique</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+                                <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+                                <option value="Île-du-Prince-Édouard">Île-du-Prince-Édouard</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                                <option value="Terre-Neuve-et-Labrador">Terre-Neuve-et-Labrador</option>
+                            </select><br>
+                        </div>
+
+
+                    </fieldset>
+
+                    <br><br><fieldset id="AutresInfo">
+                        <!-- AUTRES FORMULAIRES -->
+                        <legend>Autres informations</legend><br><br>
+                        <div>
+                            <p>As-tu deja regarder des Manga</p>
+                            <label class="mdl-radio mdl-js-radio" for="oui">
+                                <input type="radio" name="Manga" value="oui" checked="checked" id="oui"
+                                    class="mdl-radio__button">
+                                <span class="mdl-radio__label">Oui</span>
+                            </label>
+                            <label class="mdl-radio mdl-js-radio" for="non">
+                                <input type="radio" name="Manga" value="non" id="non" class="mdl-radio__button">
+                                <span class="mdl-radio__label">non</span>
+                            </label>
+                        </div><br>
+
+                        <div>
+                            <p>Sur quelle plateformes as tu regarder des Manga</p>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Internet">
+                                <input type="checkbox" id="Internet" class="mdl-checkbox__input" checked>
+                                <span class="mdl-checkbox__label">Internet</span>
+                            </label>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Télévision">
+                                <input type="checkbox" id="Télévision" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Télévision</span>
+
+                            </label>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="Livres">
+                                <input type="checkbox" id="Livres" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Livres Manga</span>
+                            </label>
+                        </div><br>
+
+                        <div>
+                            <h4>Date de rendez-vous :</h4>
+                            <input type="date" id="date"><br>
+                        </div>
+
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label for="commentaire" class="mdl-textfield__label">Avis :</label>
+                            <textarea id="commentaire" name="commentaire" rows="3" cols="20" class="mdl-textfield__input"></textarea>
+                        </div>
+                        <br><br>
+                    </fieldset>
+
+                    <div>
+                        <button class="mdl-button mdl-js-button mdl-button--raised" type="submit">Envoyer le Formulaire
+                        </button>
+                    </div>
+                </form>
+
+            </aside>
+        </main>
+
+        <footer class="mdl-mini-footer" id="FootJoindre">
+            <div class="mdl-mini-footer__left-section">
+                <a href="http://validator.w3.org/check?uri=referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
+            document.URL">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png" width="133" height="64"
+                        alt="HTML5 Powered with Semantics" title="HTML5 Powered with Semantics">
+                </a>
+            </div>
+
+            <div class="mdl-mini-footer__right-section">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer"
+                    onclick="this.href='http://jigsaw.w3.org/css-validator/validator?uri=' + document.URL">
+                    <img src="http://www.w3.org/Icons/valid-css.png" width="133" height="64" alt="CSS validator"
+                        title="CSS validator">
+                </a>
+            </div>
+
+            <div id="Information" class="mdl-mini-footer__middle-section">
+                <p>
+                    Droits d'auteurs © Saadi Zakarya 20223251 <time datetime="2023-01-30"
+                        class="datefr">30/01/2023</time>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- Script JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Script/FormulaireValid.js"></script>
+    <script src="Script/date.js"></script>
+</body>
+
+</html>
